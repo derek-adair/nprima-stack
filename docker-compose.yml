@@ -1,0 +1,6 @@
+version: '2'
+services:
+  admin:
+    image: nprima_admin
+    ports: ["8080:80"]
+  
