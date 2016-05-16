@@ -2,13 +2,16 @@ admin:
   image: nprima_admin
   expose:
     - "80"
-#spiderman:
-#  image: aio_spiderman
-#  expose:
-#    - "80"
+spiderman:
+  image: aio_spiderman
+  expose:
+    - "80"
+  ports:
+    - "8888:80"
 lb:
   build: ./ops/nginx/
   links:
     - admin
+    - spiderman
   ports:
     - "80:80"
