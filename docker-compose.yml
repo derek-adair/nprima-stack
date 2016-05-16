@@ -1,6 +1,14 @@
-version: '2'
-services:
-  admin:
-    image: nprima_admin
-    ports: ["8080:80"]
-  
+admin:
+  image: nprima_admin
+  expose:
+    - "80"
+#spiderman:
+#  image: aio_spiderman
+#  expose:
+#    - "80"
+lb:
+  build: ./ops/nginx/
+  links:
+    - admin
+  ports:
+    - "80:80"
