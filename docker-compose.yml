@@ -1,9 +1,9 @@
 admin:
-  image: nprima_admin
+  build: ./nprima_admin/
   expose:
     - "80"
 spiderman:
-  image: aio_spiderman
+  build: ./aio_spider/
   expose:
     - "80"
   ports:
