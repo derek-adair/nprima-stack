@@ -4,6 +4,3 @@
 [submodule "aio_spider"]
 	path = aio_spider
 	url = https://github.com/derek-adair/aio_spider.git
-[submodule "nprima-engine"]
-    path = nprima-engine
-    url = https://github.com/derek-adair/nprima-engine.git
