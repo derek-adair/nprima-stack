@@ -2,6 +2,9 @@ admin:
   build: ./nprima_admin/
   expose:
     - "80"
+api:
+  build: ./nprima_api/
+  expose: "80"
 spiderman:
   build: ./aio_spider/
   expose:
