@@ -3,8 +3,12 @@ admin:
   expose:
     - "80"
 api:
-  build: ./nprima_api/
-  expose: "80"
+  build: ./nprima-engine/
+  dockerfile: rest.Dockerfile
+  volumes:
+    - ./nprima-engine/nprimaengine/rest_server/:/code
+  expose: 
+    - "80"
 spiderman:
   build: ./aio_spider/
   expose:
@@ -16,5 +20,6 @@ lb:
   links:
     - admin
     - spiderman
+    - api
   ports:
     - "80:80"
