@@ -1,9 +1,9 @@
-[submodule "nprima_admin"]
-	path = nprima_admin
-	url = https://github.com/derek-adair/nprima_admin.git
-[submodule "aio_spider"]
-	path = aio_spider
-	url = https://github.com/derek-adair/aio_spider.git
 [submodule "nprima-engine"]
 	path = nprima-engine
 	url = https://github.com/derek-adair/nprima-engine.git
+[submodule "aio-spider"]
+	path = aio-spider
+	url = https://github.com/derek-adair/aio-spider.git
+[submodule "nprima-admin"]
+	path = nprima-admin
+	url = https://github.com/derek-adair/nprima-admin.git

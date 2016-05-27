@@ -1,5 +1,5 @@
 admin:
-  build: ./nprima_admin/
+  build: ./nprima-admin/
   expose:
     - "80"
 api:
@@ -10,7 +10,7 @@ api:
   expose: 
     - "80"
 spiderman:
-  build: ./aio_spider/
+  build: ./aio-spider/
   expose:
     - "80"
   ports:
