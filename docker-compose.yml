@@ -13,8 +13,6 @@ spiderman:
   build: ./aio-spider/
   expose:
     - "80"
-  ports:
-    - "8888:80"
 lb:
   build: ./ops/nginx/
   links:
