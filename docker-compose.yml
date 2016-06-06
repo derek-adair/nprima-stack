@@ -5,8 +5,6 @@ admin:
 api:
   build: ./nprima-engine/
   dockerfile: rest.Dockerfile
-  volumes:
-    - ./nprima-engine/nprimaengine/rest_server/:/code
   expose: 
     - "80"
 spiderman:
