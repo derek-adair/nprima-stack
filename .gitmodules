@@ -7,3 +7,6 @@
 [submodule "nprima-admin"]
 	path = nprima-admin
 	url = https://github.com/derek-adair/nprima-admin.git
+[submodule "async-pixel"]
+	path = async-pixel
+	url = https://github.com/derek-adair/async-pixel.git
